@@ -26,10 +26,10 @@ function makeGrid(size) {
         });
     });
 }    
-
-function hoverGrid(value) {
+// need to work on various color values - yet to do
+// function hoverGrid(value) {
     
-}
+// }
 
 // create a container to store all divs
 const container = document.createElement('div');

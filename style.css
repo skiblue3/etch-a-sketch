@@ -31,6 +31,7 @@ button {
 }
 #container {
     display: grid;
+    border: 0.1px solid black;
 }
 .grid {
     border: 0.1px solid black;
