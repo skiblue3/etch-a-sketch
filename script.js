@@ -13,8 +13,10 @@ function makeGrid(size) {
         div.classList.add('grid');
         container.appendChild(div);
     }
-    container.style.gridTemplateColumns = `repeat(${size}, ${420/size}px)`;
-    container.style.gridTemplateRows = `repeat(${size}, ${420/size}px)`;
+    container.style.gridTemplateColumns = `repeat(${size}, ${360/size}px)`;
+    container.style.gridTemplateRows = `repeat(${size}, ${360/size}px)`;
+
+    document.querySelector('main').appendChild(container);
 
     // check for hovering event
     const divs = document.querySelectorAll('.grid');
@@ -25,6 +27,9 @@ function makeGrid(size) {
     });
 }    
 
+function hoverGrid(value) {
+    
+}
 
 // create a container to store all divs
 const container = document.createElement('div');
@@ -47,5 +52,4 @@ button.addEventListener('click', (e) => {
     makeGrid(size);
 });
 
-document.querySelector('body').appendChild(container);
 
