@@ -21,22 +21,21 @@ function makeGrid(size) {
     // checks for which button got clicked
     const colors = document.querySelectorAll('.colors');
     colors.forEach((color) => {
-        color.addEventListener('click', () => hoverGrid(color.getAttribute('id'), size));
+        color.addEventListener('click', () => hoverGrid(color.getAttribute('id')));
     });
 
     // check for hovering event
     const divs = document.querySelectorAll('.grid');
     let color = 0;
     divs.forEach((div) => {
-        div.addEventListener('mouseover', function () {
+        div.addEventListener('mouseover', () => {
             div.style.backgroundColor = `rgb(${color},${color},${color})`;
         });
     });
-
-    
 }    
-// need to work on various color values - yet to do
-function hoverGrid(value = 'black',) {
+
+// gets value of color from button and updates with new grid
+function hoverGrid(value = 'black') {
     let color;
     document.querySelectorAll('.grid').forEach((div) => {div.remove()});
     for (let i = 0; i < size*size; i++) {
@@ -57,6 +56,7 @@ function hoverGrid(value = 'black',) {
                 });
             });
             break;
+
         case 'gray':
             divs.forEach((div) => {
                 div.addEventListener('mouseover', function () {
@@ -68,6 +68,7 @@ function hoverGrid(value = 'black',) {
                 });
             });
             break;
+
         case 'rainbow':
             color = 0;
             divs.forEach((div) => {
@@ -76,6 +77,7 @@ function hoverGrid(value = 'black',) {
                 });
             });
             break;
+
         case 'random':
                 color = `rgb(${random255()},${random255()},${random255()})`
                 divs.forEach((div) => {
@@ -86,6 +88,7 @@ function hoverGrid(value = 'black',) {
                 break;
     }
 }
+
 
 // create a container to store all divs
 const container = document.createElement('div');

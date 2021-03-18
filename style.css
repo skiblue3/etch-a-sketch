@@ -1,13 +1,13 @@
 body {
-    background-color: #93e8f3;
+    background-color: #19cde5;
 }
 
 header {
-    color: #f90101;
+    color: #E9005A;
     border: 2px solid black;
-    background-color: #f8bff0;
+    background-color: #19E596;
     box-shadow: 3px 3px 1px 0.5px #444, 2px 2px 0.5px #999;
-    padding: 5px;
+    padding: 20px;
     font-family: Berkshire Swash;
     font-size: 4em;
     text-align: center;
@@ -21,6 +21,11 @@ main {
     justify-content: center;
     align-items: center;
     row-gap: 10px;
+}
+#gridtext {
+    font-family: Patrick Hand;
+    font-weight: 500;
+    font-size: 1.5em;
 }
 #buttons {
     display: flex;
