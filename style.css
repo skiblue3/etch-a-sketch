@@ -20,7 +20,11 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 30px;
+    row-gap: 10px;
+}
+#buttons {
+    display: flex;
+    column-gap: 10px;
 }
 button {
     font-size: 0.9em;
@@ -35,4 +39,5 @@ button {
 }
 .grid {
     border: 0.1px solid black;
+    background-color: #fff;
 }
